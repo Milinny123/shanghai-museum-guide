@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b6670">
+  <title>上海科技馆 · 科奇导览</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-label="上海科技馆">SSTM <span>上海科技馆</span></div>
+      <div class="topbar-status"><span class="status-dot"></span>开放导览</div>
+    </header>
+
+    <main id="app" class="content" aria-live="polite"></main>
+
+    <nav class="tabbar" aria-label="主导航">
+      <button class="tab is-active" data-view="home"><span class="tab-icon">⌂</span><span>首页</span></button>
+      <button class="tab" data-view="explore"><span class="tab-icon">⌕</span><span>展馆</span></button>
+      <button class="tab" data-view="trip"><span class="tab-icon">☆</span><span>我的行程</span><b id="trip-badge" class="tab-badge" hidden>0</b></button>
+    </nav>
+  </div>
+  <div id="drawer-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
